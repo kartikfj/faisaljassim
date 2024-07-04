@@ -1,0 +1,150 @@
+/* src/app/contact-form/contact-form.component.css */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 60%; /* Use 60% width */
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    padding: 20px;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 180%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .contact-image {
+    flex: 1 1 35%; /* Use 35% width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .contact-image h3 {
+    margin: 20px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .contact-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .contact-details, .contact-image {
+      flex: 1 1 100%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+    }
+    
+    .contact-details {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 10px;
+    }
+  
+    .contact-form {
+      padding: 10px;
+    }
+  
+    .contact-image {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form h2 {
+      font-size: 20px;
+    }
+  
+    .contact-image h3 {
+      font-size: 20px;
+    }
+  
+    .form-group input, .form-group textarea {
+      padding: 8px;
+    }
+  
+    .form-group button {
+      padding: 8px;
+      font-size: 16px;
+    }
+  
+    .contact-details, .contact-image {
+      flex: 1 1 100%;
+      padding: 10px;
+    }
+  }
+  

@@ -10,7 +10,12 @@ import { NewsAndEventsComponent } from './news-and-events/news-and-events.compon
 import { BrochuresComponent } from './brochures/brochures.component';
 import { TrainingAndEducationComponent } from './training-and-education/training-and-education.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { AccreditationsComponent } from './accreditations/accreditations.component';
+import {  AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environment/environment';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +27,17 @@ import { AccreditationsComponent } from './accreditations/accreditations.compone
     BrochuresComponent,
     TrainingAndEducationComponent,
     ContactUsComponent,
-    AccreditationsComponent
+    FooterComponent,
+    HeaderComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig), // Initialize Firebase using environment config
+    AngularFirestoreModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

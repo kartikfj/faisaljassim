@@ -1,0 +1,134 @@
+/* footer.component.css */
+
+footer.overlap {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.parallax.pattern {
+    height: 200px;
+}
+
+.block.no-padding {
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-3, .col-md-2 {
+    padding: 15px;
+    box-sizing: border-box;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.widget-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.top-social {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+}
+
+.top-social li {
+    margin-right: 10px;
+}
+
+.top-social li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.bottom-footer {
+    background-color: #1d1d1d;
+    padding: 10px 0;
+}
+
+.bottom-footer .container {
+    text-align: center;
+}
+
+.bottom-footer p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.bottom-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.footer-map {
+    position: relative;
+}
+
+.footer-map img {
+    width: 100%;
+}
+
+.pointer {
+    position: absolute;
+}
+
+.pointer span {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.pointer .address {
+    display: none;
+}
+
+.pointer:hover .address {
+    display: block;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
